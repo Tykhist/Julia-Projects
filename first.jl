@@ -26,9 +26,10 @@ product = sum * difference
 quotient = product / difference
 power = quotient ^ 2 # Power is only a carrot
 modulus = power % 101
-# Commas in print work the same as in python
+# Commas in print work the same as in python, except they don't add a space
 println(sum, difference, product, quotient, power, modulus)
-println(sum, "\n", difference, "\n", product, "\n", quotient, "\n", power, "\n", modulus, "\n")
+# You can add a value to a string using $ like in bash, instead of needing to format
+println("$sum \n$difference \n$product \n$quotient \n$power \n$modulus")
 
 days = 365
 days_float = convert(Float32, days)
